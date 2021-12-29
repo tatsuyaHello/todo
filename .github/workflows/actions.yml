@@ -18,7 +18,7 @@ jobs:
         env:
           SQLITE_DB_LOCATION: /tmp/todo.db
   build_and_push:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v2
