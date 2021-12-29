@@ -35,6 +35,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: |
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:1.0.0
+          tags: | # if using github.repository, it appears the error that "buildx failed with: error: invalid tag "ghcr.io/tatsuyaHello/todo:latest": repository name must be lowercase". So, I use hard coding
+            ghcr.io//tatsuyahello/todo:latest
+            ghcr.io//tatsuyahello/todo:1.0.0
